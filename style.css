@@ -530,4 +530,10 @@ span{
   .home-content h3{
     font-size: 20px;
   }
+  .service-info h4{
+    font-weight: 800;
+  }
+  .service-info p{
+    font-weight: 400;
+  }
 }
