@@ -446,13 +446,13 @@ span{
 @media(max-width:775px){
     #menu-icon{
         display: block;
-        font-size: 50px;
+        font-size: 40px;
     }
     .navbar{
         position: absolute;
         top: 100%;
         right: 0;
-        width: 400px;
+        width: 350px;
         padding: 1rem 3%;
         background: rgba(0, 0, 0, 0.925);
         backdrop-filter: blur(20px);
@@ -487,13 +487,13 @@ span{
         align-items: center;
     }
     p{
-        width: 350px;
+        width: 320px;
     }
     .input-box{
-        width: 350px;
+        width: 320px;
     }
     #hdh{
-        width: 350px;
+        width: 320px;
     }
     .uu{
         display: flex;
@@ -504,7 +504,7 @@ span{
         font-size: 10px;
     }
     .service-box{
-        width: 370px;
+        width: 330px;
     }
     .home-content h1{
         font-size: 35px;
@@ -527,4 +527,7 @@ span{
         padding: 1rem;
         padding-top: 4rem;
     }
+  .home-content h3{
+    font-size: 20px;
+  }
 }
