@@ -194,7 +194,7 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: 'Junior Web Developer';
+        content: 'Jr Web Developer';
     }
     21%,
     40%{
@@ -235,7 +235,7 @@ span{
     65%,
     80%,
     85%{
-        width: calc(100% + 8px);
+        width: calc(50% + 8px);
     }
 
 }
@@ -292,7 +292,7 @@ span{
     content: "";
     background-color: var(--second-bg-color);
     position: absolute;
-    width: calc(100% + 8px);
+    width: calc(50% + 8px);
     height: 50px;
     border-left: 3px solid var(--second-bg-color);
     right: -8px;
@@ -319,10 +319,10 @@ span{
     color: white;
 }
 .services-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
     align-items: center;
     gap: 2.5rem;
+    flex-wrap: wrap;
 }
 .service-box{
     background-color: var(--main-color);
@@ -355,7 +355,6 @@ span{
     font-size: 1.6rem;
     font-weight: 400;
     max-height: 100px;
-    margin: auto;
 }
 .contact{
     background-color: var(--second-bg-color);
@@ -390,6 +389,7 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 .footer .social{
     text-align: center;
@@ -419,9 +419,9 @@ span{
     margin-top: 0;
     padding: 0;
     font-size: 18px;
-    line-height: 1.6rem;
+    line-height: 3rem;
     margin-bottom: 0;
-    text-align: center;
+    text-align: left;
 }
 .footer ul li a{
     color: white;
@@ -433,8 +433,9 @@ span{
     border-bottom: 3px solid var(--main-color);
 }
 .footer ul li{
-    display: inline-block;
-    padding: 0 15px;
+    display: flex;
+    gap: 30px;
+    text-align: center;
 }
 .footer .copyright{
     margin-top: 50px;
@@ -442,40 +443,16 @@ span{
     font-size: 16px;
     color: white;
 }
-@media(max-width:1285px){
-    html{
-        font-size: 55%;
-    }
-    .services-container{
-        padding-bottom: 7rem;
-        grid-template-columns: repeat(2,1fr);
-        margin: 0 5rem;
-    }
-
-}
-@media(max-width:991px){
-    header{
-        padding: 2rem 3%;
-    }
-    section{
-        padding: 10rem 3% 2rem ;
-    }
-    .services{
-        padding-bottom: 7rem;
-    }
-    .footer{
-        padding: 2rem 3%;
-    }
-}
-@media(max-width:895px){
+@media(max-width:775px){
     #menu-icon{
         display: block;
+        font-size: 50px;
     }
     .navbar{
         position: absolute;
         top: 100%;
         right: 0;
-        width: 50%;
+        width: 400px;
         padding: 1rem 3%;
         background: rgba(0, 0, 0, 0.925);
         backdrop-filter: blur(20px);
@@ -493,45 +470,61 @@ span{
         margin: 3rem 0;
         color: white;
     }
-    .home{
+    .services-container{
         flex-direction: column;
-        margin: 5rem 4rem;
-    }
-    .home-content h3{
-        font-size: 2.6rem;
-    }
-    .home-content h1{
-        font-size: 8rem;
-        margin-top: 3rem;
-    }
-    .home-content p{
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    .home-img img{
-        width: 250px;
-        height: 250px;
-        margin-top: -2rem;
     }
     .about{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
-    .about-content{
-        margin: 0 2rem 4rem;
+    .footer{
+        width: 100%;
     }
-    .about img{
-        width: 250px;
-        height: 250px;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-    }
-    .services h2{
-        margin-bottom: 3rem;
-    }
-    .services-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .footer ul li{
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p{
+        width: 350px;
+    }
+    .input-box{
+        width: 350px;
+    }
+    #hdh{
+        width: 350px;
+    }
+    .uu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        font-size: 10px;
+    }
+    .service-box{
+        width: 370px;
+    }
+    .home-content h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .heading{
+        font-size: 40px;
+    }
+    .home-img img{
+        width: 300px;
+        height: 300px;
+    }
+    .about-img img{
+        width: 300px;
+        height: 300px;
+    }
+    .service-box .service-info{
+        padding: 1rem;
+        padding-top: 4rem;
     }
 }
